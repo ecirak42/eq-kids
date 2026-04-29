@@ -214,18 +214,23 @@
             group fit, and next enrollment steps.
           </p>
         </div>
-        <form class="contact-form" action="mailto:hello@eqkids.local" method="post" enctype="text/plain">
+        <form class="contact-form" id="inquiry-form" data-endpoint="">
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <label class="hidden-field" aria-hidden="true">
+            Leave this blank
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </label>
           <label>
             Parent name
-            <input type="text" name="Parent name" placeholder="Your name" required />
+            <input type="text" name="parentName" placeholder="Your name" required />
           </label>
           <label>
             Email
-            <input type="email" name="Email" placeholder="you@example.com" required />
+            <input type="email" name="email" placeholder="you@example.com" required />
           </label>
           <label>
             Child's grade
-            <select name="Child grade" required>
+            <select name="childGrade" required>
               <option value="">Select grade</option>
               <option>Kinder</option>
               <option>1st grade</option>
@@ -237,7 +242,7 @@
           </label>
           <label>
             What are you hoping EQ Kids helps with?
-            <textarea name="Goals" rows="4" placeholder="Confidence, big feelings, friendships, transitions..."></textarea>
+            <textarea name="goals" rows="4" placeholder="Confidence, big feelings, friendships, transitions..."></textarea>
           </label>
           <button class="button primary wide" type="submit">Send inquiry</button>
         </form>
@@ -251,5 +256,6 @@
       </a>
       <p>Afterschool emotional intelligence lessons for elementary-aged kids.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

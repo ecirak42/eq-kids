@@ -124,6 +124,11 @@ img {
   box-shadow: 0 7px 0 var(--blue-950), 0 18px 34px rgba(29, 116, 216, 0.18);
 }
 
+.button:disabled {
+  cursor: progress;
+  opacity: 0.72;
+}
+
 .button.secondary {
   color: var(--blue-950);
   background: white;
@@ -676,6 +681,37 @@ details p {
   gap: 16px;
   padding: 26px;
   color: var(--ink);
+}
+
+.form-status {
+  display: none;
+  margin: 0;
+  padding: 13px 14px;
+  border: 2px solid var(--blue-950);
+  border-radius: 14px;
+  color: var(--blue-950);
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.form-status:not(:empty) {
+  display: block;
+}
+
+.form-status[data-type="success"] {
+  background: var(--mint-100);
+}
+
+.form-status[data-type="error"] {
+  background: var(--rose-100);
+}
+
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 label {
