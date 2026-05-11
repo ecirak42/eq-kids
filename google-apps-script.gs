@@ -15,6 +15,7 @@ function doPost(e) {
     new Date(),
     params.parentName || "",
     params.email || "",
+    params.phone || "",
     params.childGrade || "",
     params.goals || "",
     params.pageUrl || "",
@@ -36,17 +37,37 @@ function getInquirySheet() {
     sheet = spreadsheet.insertSheet(SHEET_NAME);
   }
 
-  if (sheet.getLastRow() === 0) {
-    sheet.appendRow([
-      "Received At",
-      "Parent Name",
-      "Email",
-      "Child Grade",
-      "Goals",
-      "Page URL",
-      "Submitted At",
-    ]);
-  }
+  ensureInquiryHeaders(sheet);
 
   return sheet;
+}
+
+function ensureInquiryHeaders(sheet) {
+  const headers = [
+    "Received At",
+    "Parent Name",
+    "Email",
+    "Phone",
+    "Child Grade",
+    "Goals",
+    "Page URL",
+    "Submitted At",
+  ];
+
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(headers);
+    return;
+  }
+
+  const existingHeaders = sheet.getRange(1, 1, 1, Math.max(sheet.getLastColumn(), headers.length)).getValues()[0];
+  const hasOldHeaderOrder = existingHeaders[0] === "Received At"
+    && existingHeaders[1] === "Parent Name"
+    && existingHeaders[2] === "Email"
+    && existingHeaders[3] === "Child Grade";
+
+  if (hasOldHeaderOrder) {
+    sheet.insertColumnAfter(3);
+  }
+
+  sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
 }
