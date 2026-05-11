@@ -19,7 +19,7 @@ form?.addEventListener("submit", async (event) => {
   }
 
   if (!endpoint) {
-    setStatus("This form is almost ready. Please email us for now while we finish connecting inquiries.", "error");
+    setStatus("This form is almost ready. Please email hello@eqkidsclub.org for now while we finish connecting inquiries.", "error");
     return;
   }
 
@@ -41,7 +41,7 @@ form?.addEventListener("submit", async (event) => {
     form.reset();
     setStatus("Thanks, your inquiry was received. We'll follow up soon.", "success");
   } catch (error) {
-    setStatus("Something went wrong. Please try again or email us directly.", "error");
+    setStatus("Something went wrong. Please try again or email hello@eqkidsclub.org directly.", "error");
   } finally {
     submitButton.disabled = false;
     submitButton.textContent = "Send inquiry";
