@@ -36,6 +36,6 @@ Changing website A/CNAME records should not require removing email records.
 
 ## Real Form Setup
 
-The contact form is wired for a Google Apps Script endpoint that saves submissions into a Google Sheet.
+The contact form is wired for a Google Apps Script endpoint that saves submissions into a Google Sheet, then redirects visitors to `thank-you.html`.
 
 See `FORM_SETUP.md` for the one-time Google Sheet deployment steps.

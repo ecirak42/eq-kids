@@ -1,13 +1,18 @@
 # Form Setup
 
-This site is ready to send inquiries into a Google Sheet using Google Apps Script.
+This site sends inquiries into a Google Sheet using Google Apps Script.
+
+The live website is already connected to a deployed Apps Script web app. These
+steps are here in case the endpoint ever needs to be recreated.
 
 ## 1. Create the Google Sheet
 
 1. Create a new Google Sheet named `EQ Kids Website Inquiries`.
 2. In the Sheet, go to `Extensions` > `Apps Script`.
 3. Delete the starter code and paste the contents of `google-apps-script.gs`.
-4. Save the project.
+4. If you're using a standalone Apps Script project instead of opening Apps
+   Script from the Sheet, paste the Sheet ID into `SPREADSHEET_ID`.
+5. Save the project.
 
 ## 2. Deploy the Web App
 
@@ -35,3 +40,6 @@ Paste the Web App URL inside `data-endpoint`.
 ```
 
 Then commit and push the change to GitHub.
+
+After saving, submit one test inquiry and confirm a row appears in the
+`Inquiries` tab.

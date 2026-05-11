@@ -774,6 +774,39 @@ textarea:focus {
   justify-items: end;
 }
 
+.thank-you-page {
+  min-height: 100vh;
+}
+
+.thank-you-main {
+  display: grid;
+  min-height: calc(100vh - 180px);
+  place-items: center;
+  padding: clamp(54px, 9vw, 118px) clamp(20px, 5vw, 72px);
+  background:
+    linear-gradient(110deg, #ffffff 0%, #ffffff 50%, rgba(232, 243, 255, 0.92) 50%, #f7fbff 100%);
+}
+
+.thank-you-panel {
+  width: min(860px, 100%);
+  padding: clamp(34px, 6vw, 70px);
+  border: 3px solid var(--blue-950);
+  border-radius: 30px;
+  background: white;
+  box-shadow: 10px 10px 0 var(--aqua-300), var(--shadow);
+}
+
+.thank-you-panel h1 {
+  font-size: clamp(3rem, 6vw, 5.7rem);
+}
+
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
 @media (max-width: 980px) {
   .site-header {
     align-items: flex-start;
@@ -889,5 +922,14 @@ textarea:focus {
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .footer-links {
+    justify-items: start;
+  }
+
+  .thank-you-actions,
+  .thank-you-actions .button {
+    width: 100%;
   }
 }

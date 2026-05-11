@@ -2,6 +2,10 @@ const form = document.querySelector("#inquiry-form");
 const statusMessage = document.querySelector("#form-status");
 
 function setStatus(message, type) {
+  if (!statusMessage) {
+    return;
+  }
+
   statusMessage.textContent = message;
   statusMessage.dataset.type = type;
 }
@@ -39,7 +43,8 @@ form?.addEventListener("submit", async (event) => {
     });
 
     form.reset();
-    setStatus("Thanks, your inquiry was received. We'll follow up soon.", "success");
+    const successUrl = form.dataset.successUrl?.trim() || "thank-you.html";
+    window.location.href = successUrl;
   } catch (error) {
     setStatus("Something went wrong. Please try again or email hello@eqkidsclub.org directly.", "error");
   } finally {
