@@ -1,5 +1,18 @@
 const form = document.querySelector("#inquiry-form");
 const statusMessage = document.querySelector("#form-status");
+const stickyCta = document.querySelector(".sticky-cta");
+const applySection = document.querySelector("#apply");
+
+if (stickyCta && applySection) {
+  const updateStickyCta = () => {
+    const applyTop = applySection.getBoundingClientRect().top;
+    stickyCta.dataset.hidden = applyTop < window.innerHeight * 0.8 ? "true" : "false";
+  };
+
+  updateStickyCta();
+  window.addEventListener("scroll", updateStickyCta, { passive: true });
+  window.addEventListener("resize", updateStickyCta);
+}
 
 function setStatus(message, type) {
   if (!statusMessage) {
