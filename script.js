@@ -28,6 +28,7 @@ form?.addEventListener("submit", async (event) => {
   }
 
   const submitButton = form.querySelector("button[type='submit']");
+  const originalButtonText = submitButton.textContent;
   submitButton.disabled = true;
   submitButton.textContent = "Sending...";
   setStatus("", "");
@@ -49,6 +50,6 @@ form?.addEventListener("submit", async (event) => {
     setStatus("Something went wrong. Please try again or email hello@eqkidsclub.org directly.", "error");
   } finally {
     submitButton.disabled = false;
-    submitButton.textContent = "Send inquiry";
+    submitButton.textContent = originalButtonText;
   }
 });
