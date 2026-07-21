@@ -3,30 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EQ Kids | Afterschool SEL Lessons</title>
+    <title>EQ Kids Club | Emotional Intelligence Classes for Kids in Webster Groves, St. Louis</title>
     <meta
       name="description"
-      content="EQ Kids is a weekly afterschool social-emotional learning program for elementary-aged kids."
+      content="Saturday emotional intelligence classes for elementary-aged kids at The Monday Club near Webster Groves. Free to apply, groups capped at 12, led by Hanako Hashiguchi."
     />
     <link rel="canonical" href="https://eqkidsclub.org/" />
-    <meta property="og:title" content="EQ Kids | Afterschool SEL Lessons" />
+    <meta property="og:title" content="EQ Kids Club | Emotional Intelligence Classes for Kids" />
     <meta
       property="og:description"
-      content="Weekly afterschool emotional intelligence lessons for elementary-aged kids."
+      content="Saturday emotional intelligence classes for elementary-aged kids near Webster Groves. Free to apply, groups capped at 12."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eqkidsclub.org/" />
     <meta property="og:image" content="https://eqkidsclub.org/assets/eq-kids-hero.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#7ee8f2" />
+    <meta name="theme-color" content="#2f5d50" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:wght@700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
     <!-- Meta Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -41,6 +40,261 @@
       fbq('track', 'PageView');
     </script>
     <!-- End Meta Pixel Code -->
+    <style>
+      :root {
+        --green: #2f5d50;
+        --green-dark: #234539;
+        --cream: #faf6ef;
+        --cream-deep: #f1e9da;
+        --ink: #28302c;
+        --soft: #5c6661;
+        --accent: #e8a04c;
+        --accent-dark: #c9822f;
+        --card: #ffffff;
+        --radius: 18px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: var(--green-dark); }
+      img { max-width: 100%; display: block; }
+      .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+      .btn {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--green-dark);
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 16px 32px;
+        border-radius: 999px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.15s ease, background 0.15s ease;
+        text-align: center;
+      }
+      .btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+      .btn.full { width: 100%; }
+      .pill {
+        display: inline-block;
+        background: var(--cream-deep);
+        color: var(--green);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 6px 14px;
+        border-radius: 999px;
+        margin-bottom: 16px;
+      }
+
+      /* Top bar */
+      .topbar {
+        background: var(--green);
+        color: #f4efe5;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 9px 16px;
+      }
+      header.site {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+      }
+      .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--green-dark); font-weight: 700; font-size: 1.1rem; }
+      .brand-mark {
+        background: var(--green);
+        color: var(--cream);
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 6px 10px;
+        font-size: 0.95rem;
+      }
+      .header-cta { font-size: 0.95rem; padding: 11px 22px; }
+
+      /* Hero */
+      .hero { padding: 36px 0 56px; display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; }
+      .hero h1 { font-size: clamp(2rem, 4.6vw, 3.1rem); margin-bottom: 18px; }
+      .hero h1 em { font-style: normal; color: var(--accent-dark); }
+      .hero .lede { font-size: 1.15rem; color: var(--soft); margin-bottom: 26px; max-width: 34em; }
+      .hero-points { list-style: none; margin: 22px 0 0; display: grid; gap: 10px; }
+      .hero-points li { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; }
+      .hero-points li::before { content: "✓"; color: var(--green); font-weight: 800; flex-shrink: 0; }
+      .hero-note { font-size: 0.9rem; color: var(--soft); margin-top: 12px; }
+      .hero-visual { position: relative; }
+      .hero-visual img { border-radius: var(--radius); box-shadow: 0 24px 50px -24px rgba(35, 69, 57, 0.45); }
+      .hero-tag {
+        position: absolute; bottom: -16px; left: 16px;
+        background: var(--card); border-radius: 14px;
+        padding: 12px 18px; box-shadow: 0 12px 30px -14px rgba(35, 69, 57, 0.4);
+        font-size: 0.9rem; font-weight: 600; color: var(--green-dark);
+      }
+      .hero-tag small { display: block; color: var(--soft); font-weight: 500; }
+      .trust-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin: -18px 0 34px;
+      }
+      .trust-item {
+        background: #fffdf9;
+        border: 1px solid #eee5d6;
+        border-radius: 14px;
+        padding: 14px 16px;
+        color: var(--soft);
+        font-size: 0.9rem;
+      }
+      .trust-item strong {
+        display: block;
+        color: var(--green-dark);
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 1.05rem;
+        line-height: 1.2;
+        margin-bottom: 3px;
+      }
+
+      /* Sections */
+      section { padding: 56px 0; }
+      section.alt { background: var(--cream-deep); }
+      .section-head { max-width: 620px; margin-bottom: 36px; }
+      .section-head h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); margin-bottom: 12px; }
+      .section-head p { color: var(--soft); }
+
+      .cards3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .card {
+        background: var(--card); border-radius: var(--radius);
+        padding: 26px; box-shadow: 0 10px 28px -18px rgba(35, 69, 57, 0.35);
+      }
+      .card h3 { font-size: 1.15rem; margin-bottom: 8px; }
+      .card p { color: var(--soft); font-size: 0.97rem; }
+      .card .num {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 38px; height: 38px; border-radius: 50%;
+        background: var(--cream-deep); color: var(--green);
+        font-weight: 700; margin-bottom: 14px; font-family: "Fraunces", serif;
+      }
+
+      /* Framework */
+      .framework { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 8px; }
+      .framework .step {
+        background: var(--green); color: var(--cream);
+        border-radius: 14px; padding: 18px; text-align: center;
+      }
+      .framework .step strong { display: block; font-family: "Fraunces", serif; font-size: 1.2rem; margin-bottom: 4px; }
+      .framework .step span { font-size: 0.85rem; opacity: 0.85; }
+
+      /* Instructor */
+      .instructor { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center; background: var(--card); border-radius: var(--radius); padding: 36px; box-shadow: 0 10px 28px -18px rgba(35, 69, 57, 0.35); }
+      .avatar {
+        width: 110px; height: 110px; border-radius: 50%;
+        background: var(--green); color: var(--cream);
+        display: flex; align-items: center; justify-content: center;
+        font-family: "Fraunces", serif; font-size: 2.4rem; font-weight: 700;
+      }
+      .instructor h3 { font-size: 1.4rem; margin-bottom: 6px; }
+      .instructor .role { color: var(--accent-dark); font-weight: 600; font-size: 0.95rem; margin-bottom: 12px; }
+      .instructor p { color: var(--soft); }
+
+      /* Session timeline */
+      .timeline { display: grid; gap: 0; }
+      .timeline .row {
+        display: grid; grid-template-columns: 110px 1fr; gap: 20px;
+        padding: 16px 0; border-bottom: 1px solid var(--cream-deep);
+      }
+      .timeline .row:last-child { border-bottom: none; }
+      .timeline .time { font-weight: 700; color: var(--green); font-size: 0.95rem; }
+      .timeline .what strong { display: block; color: var(--ink); }
+      .timeline .what span { color: var(--soft); font-size: 0.95rem; }
+
+      /* Logistics + price */
+      .logistics { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+      .fact-list { list-style: none; display: grid; gap: 14px; }
+      .fact-list li { display: grid; grid-template-columns: 130px 1fr; gap: 12px; background: var(--card); border-radius: 12px; padding: 14px 18px; }
+      .fact-list .k { font-weight: 700; color: var(--green); font-size: 0.92rem; }
+      .price-card { background: var(--green); color: var(--cream); border-radius: var(--radius); padding: 32px; }
+      .price-card h3 { color: var(--cream); font-size: 1.3rem; margin-bottom: 8px; }
+      .price-big { font-family: "Fraunces", serif; font-size: 2.6rem; font-weight: 700; }
+      .price-big span { font-size: 1rem; font-family: "Inter", sans-serif; font-weight: 500; opacity: 0.8; }
+      .price-card ul { list-style: none; margin: 18px 0 22px; display: grid; gap: 9px; font-size: 0.97rem; }
+      .price-card li::before { content: "✓  "; color: var(--accent); font-weight: 700; }
+      .price-compare { font-size: 0.88rem; opacity: 0.8; margin-top: 14px; }
+
+      /* FAQ */
+      .faq details { background: var(--card); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
+      .faq summary { font-weight: 600; cursor: pointer; color: var(--green-dark); }
+      .faq details p { margin-top: 10px; color: var(--soft); font-size: 0.97rem; }
+
+      /* Application */
+      .apply-section { background: var(--green-dark); color: var(--cream); }
+      .apply-section { scroll-margin-top: 16px; }
+      .apply-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 44px; align-items: start; }
+      .apply-copy h2 { color: var(--cream); font-size: clamp(1.7rem, 3.4vw, 2.3rem); margin-bottom: 14px; }
+      .apply-copy p { opacity: 0.88; margin-bottom: 16px; }
+      .apply-steps { list-style: none; display: grid; gap: 12px; margin-top: 8px; }
+      .apply-steps li { display: flex; gap: 12px; align-items: flex-start; }
+      .apply-steps .n {
+        background: var(--accent); color: var(--green-dark);
+        width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+        display: inline-flex; align-items: center; justify-content: center;
+        font-weight: 700; font-size: 0.85rem; margin-top: 2px;
+      }
+      form.apply {
+        background: var(--card); border-radius: var(--radius); padding: 30px;
+        color: var(--ink); display: grid; gap: 16px;
+      }
+      form.apply label { display: grid; gap: 6px; font-weight: 600; font-size: 0.92rem; }
+      form.apply input, form.apply select, form.apply textarea {
+        font: inherit; padding: 12px 14px; border: 1.5px solid #d8d2c4;
+        border-radius: 10px; background: #fffdf9; width: 100%;
+      }
+      form.apply input:focus, form.apply select:focus, form.apply textarea:focus {
+        outline: 2px solid var(--green); border-color: var(--green);
+      }
+      .hidden-field { position: absolute; left: -9999px; }
+      .form-status { font-size: 0.92rem; font-weight: 600; min-height: 1.2em; }
+      .form-status[data-type="error"] { color: #b3402f; }
+      .form-status[data-type="success"] { color: var(--green); }
+      .form-fine { font-size: 0.82rem; color: var(--soft); font-weight: 400; }
+
+      footer { padding: 32px 0 90px; text-align: center; color: var(--soft); font-size: 0.9rem; }
+      footer a { color: var(--green); }
+
+      /* Sticky mobile CTA */
+      .sticky-cta {
+        position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+        padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+        background: rgba(250, 246, 239, 0.95); backdrop-filter: blur(6px);
+        box-shadow: 0 -8px 24px rgba(35, 69, 57, 0.15);
+        display: none;
+      }
+      .sticky-cta .btn { width: 100%; }
+      .sticky-cta[data-hidden="true"] { display: none; }
+
+      @media (max-width: 860px) {
+        .hero { grid-template-columns: 1fr; padding-top: 16px; gap: 36px; }
+        .trust-strip { grid-template-columns: repeat(2, 1fr); margin-top: 0; }
+        .cards3 { grid-template-columns: 1fr; }
+        .framework { grid-template-columns: repeat(2, 1fr); }
+        .logistics, .apply-grid { grid-template-columns: 1fr; }
+        .instructor { grid-template-columns: 1fr; text-align: center; }
+        .avatar { margin: 0 auto; }
+        .sticky-cta { display: block; }
+        section { padding: 44px 0; }
+        .header-cta { display: none; }
+      }
+      @media (max-width: 520px) {
+        .trust-strip { grid-template-columns: 1fr; }
+      }
+    </style>
   </head>
   <body>
     <noscript>
@@ -52,234 +306,318 @@
         alt=""
       />
     </noscript>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="EQ Kids home">
-        <span class="brand-mark">EQ</span>
-        <span>EQ Kids</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#program">Program</a>
-        <a href="#lessons">Lessons</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="#contact">Join the waitlist</a>
-    </header>
 
-    <main id="top">
+    <div class="topbar">Founding cohort now enrolling &middot; Saturdays at The Monday Club, Webster Groves &middot; Only 12 spots</div>
+
+    <div class="wrap">
+      <header class="site">
+        <a class="brand" href="#">
+          <span class="brand-mark">EQ</span>
+          <span>EQ Kids Club</span>
+        </a>
+        <a class="btn header-cta" href="#apply">Apply for a spot</a>
+      </header>
+
       <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Afterschool SEL for elementary kids</p>
-          <h1>Big feelings deserve practical tools.</h1>
-          <p class="hero-lede">
-            EQ Kids helps children build emotional awareness, friendship skills,
-            resilience, and confidence through playful weekly lessons after school.
-          </p>
-          <div class="flow-badges" aria-label="SEL practice moments">
-            <span>name it</span>
-            <span>breathe</span>
-            <span>repair</span>
-            <span>try again</span>
-          </div>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact">Save a spot</a>
-            <a class="button secondary" href="#program">See the program</a>
-          </div>
-          <div class="quick-stats" aria-label="Program highlights">
-            <span><strong>1x</strong> per week</span>
-            <span><strong>2 hrs</strong> each session</span>
-            <span><strong>$297</strong> monthly</span>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="Children practicing SEL activities">
-          <span class="shape shape-square" aria-hidden="true"></span>
-          <span class="shape shape-pill" aria-hidden="true"></span>
-          <span class="shape shape-loop" aria-hidden="true"></span>
-          <img src="assets/eq-kids-hero.png" alt="Elementary-aged kids working together in an afterschool SEL activity" />
-          <div class="floating-card session-card">
-            <span class="card-label">This week</span>
-            <strong>Empathy in action</strong>
-            <small>Notice feelings, name needs, choose kind words.</small>
-          </div>
-          <div class="floating-card price-card">
-            <strong>$297/mo</strong>
-            <small>Weekly two-hour enrichment</small>
-          </div>
-        </div>
-      </section>
-
-      <section class="trust-band" aria-label="Program values">
-        <span>Feelings vocabulary</span>
-        <span>Conflict repair</span>
-        <span>Growth mindset</span>
-        <span>Friendship skills</span>
-        <span>Calm-down tools</span>
-      </section>
-
-      <section id="program" class="section split-section">
         <div>
-          <p class="eyebrow">The program</p>
-          <h2>A steady weekly space to practice what kids use every day.</h2>
-        </div>
-        <div class="section-copy">
-          <p>
-            Each EQ Kids session blends movement, stories, discussion, hands-on
-            activities, and reflection. Kids learn to recognize what is happening
-            inside them, communicate with more clarity, and recover when a moment
-            gets hard.
+          <span class="pill">Webster Groves &middot; St. Louis</span>
+          <h1>The class that teaches kids what to <em>do</em> with big feelings.</h1>
+          <p class="lede">
+            Saturday small-group classes where elementary-aged kids practice handling
+            frustration, making friends, and bouncing back &mdash; through games,
+            stories, and role play at The Monday Club near Webster Groves.
           </p>
-          <p>
-            The format is built for elementary-aged students: active, warm,
-            concrete, and never lecture-heavy.
+          <a class="btn" href="#apply">Apply for a founding spot &rarr;</a>
+          <p class="hero-note">
+            Saturdays 12&ndash;2pm &middot; Founding cohort capped at 12 kids &middot; No payment to apply.
+            We call within one day to talk through fit and next steps.
           </p>
+          <ul class="hero-points">
+            <li>Fewer meltdowns at home &mdash; kids learn real calm-down tools they actually use</li>
+            <li>Friendship skills: listening, sharing, apologizing, and repairing conflict</li>
+            <li>Confidence to try again when something is hard or goes wrong</li>
+          </ul>
         </div>
-      </section>
-
-      <section class="feature-grid" aria-label="Program features">
-        <article class="feature-card">
-          <span class="feature-icon">01</span>
-          <h3>Check in</h3>
-          <p>Kids build a language for emotions, energy, needs, and boundaries.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon">02</span>
-          <h3>Practice</h3>
-          <p>Role play, games, art, and partner challenges turn ideas into skills.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon">03</span>
-          <h3>Reflect</h3>
-          <p>Simple take-home prompts help families keep the learning alive.</p>
-        </article>
-      </section>
-
-      <section class="flow-section" aria-label="EQ Kids learning flow">
-        <div class="flow-panel">
-          <p class="eyebrow">How kids move through it</p>
-          <h2>From big feeling to next good choice.</h2>
-          <div class="flow-steps">
-            <span>Pause</span>
-            <span>Name</span>
-            <span>Choose</span>
-            <span>Repair</span>
+        <div class="hero-visual">
+          <img src="assets/eq-kids-hero.png" alt="Elementary-aged kids working together in a small-group EQ class" />
+          <div class="hero-tag">
+            The Monday Club
+            <small>Saturdays 12&ndash;2pm &middot; Webster Groves, MO</small>
           </div>
         </div>
       </section>
+      <div class="trust-strip" aria-label="Program trust details">
+        <div class="trust-item"><strong>Free to apply</strong>No payment or commitment to start the conversation.</div>
+        <div class="trust-item"><strong>12 kids max</strong>Small groups so each child gets attention.</div>
+        <div class="trust-item"><strong>K-5 age groups</strong>We place kids carefully by age and fit.</div>
+        <div class="trust-item"><strong>Local Saturdays</strong>The Monday Club near downtown Webster Groves.</div>
+      </div>
+    </div>
 
-      <section id="lessons" class="section lessons-section">
-        <div class="section-heading">
-          <p class="eyebrow">Lesson themes</p>
-          <h2>Skills that help at home, school, and friendships.</h2>
-        </div>
-        <div class="lesson-list">
-          <article>
-            <span>Feelings</span>
-            <h3>Naming emotions</h3>
-            <p>Move from "I'm fine" or "I'm mad" into a richer emotional vocabulary.</p>
-          </article>
-          <article>
-            <span>Body cues</span>
-            <h3>Noticing signals</h3>
-            <p>Spot what stress, excitement, worry, and calm feel like in the body.</p>
-          </article>
-          <article>
-            <span>Friendship</span>
-            <h3>Repairing conflict</h3>
-            <p>Practice apologies, listening, turn-taking, and solving small problems.</p>
-          </article>
-          <article>
-            <span>Confidence</span>
-            <h3>Trying again</h3>
-            <p>Use growth mindset tools when mistakes, frustration, or comparison show up.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="pricing" class="pricing-section">
-        <div class="pricing-copy">
-          <p class="eyebrow">Simple monthly tuition</p>
-          <h2>Weekly SEL enrichment for $297/month.</h2>
+    <section class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="pill">Why parents enroll</span>
+          <h2>School teaches math. Sports teach teamwork. Who teaches feelings?</h2>
           <p>
-            Designed for families who want consistent emotional intelligence support
-            beyond the school day.
+            Most kids never get direct practice with the skills that shape their whole
+            life: calming down after disappointment, joining a group, repairing a
+            conflict, and trying again after mistakes. EQ Kids Club is a weekly space
+            built just for that.
           </p>
         </div>
-        <div class="pricing-card">
-          <span class="price-kicker">EQ Kids Monthly</span>
-          <div class="price">$297<span>/mo</span></div>
-          <ul>
-            <li>One session each week</li>
-            <li>About two hours per session</li>
-            <li>Elementary-aged small group</li>
-            <li>Hands-on SEL activities</li>
-            <li>Family reflection prompts</li>
+        <div class="cards3">
+          <article class="card">
+            <span class="num">1</span>
+            <h3>Big feelings get a plan</h3>
+            <p>Kids practice what to do when frustration, disappointment, or worry shows up &mdash; before the moment gets too big.</p>
+          </article>
+          <article class="card">
+            <span class="num">2</span>
+            <h3>Friendship gets coached</h3>
+            <p>We rehearse listening, sharing, apologizing, repairing conflict, and using words when play gets complicated.</p>
+          </article>
+          <article class="card">
+            <span class="num">3</span>
+            <h3>Confidence gets practiced</h3>
+            <p>Through games and role play, kids build the muscle of trying again when something is hard or goes wrong.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="pill">Our framework</span>
+          <h2>Every kid learns the same four moves.</h2>
+          <p>When a big feeling hits, kids who have practiced know what to do next. We rehearse this until it's second nature.</p>
+        </div>
+        <div class="framework">
+          <div class="step"><strong>Pause</strong><span>Notice the feeling before acting on it</span></div>
+          <div class="step"><strong>Name</strong><span>Put words to what's happening inside</span></div>
+          <div class="step"><strong>Choose</strong><span>Pick a next move that actually helps</span></div>
+          <div class="step"><strong>Repair</strong><span>Make things right with friends and family</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="pill">Your instructor</span>
+          <h2>Led by a real person your kids will love.</h2>
+        </div>
+        <div class="instructor">
+          <div class="avatar" aria-hidden="true">HH</div>
+          <div>
+            <h3>Hanako Hashiguchi</h3>
+            <p class="role">Lead Instructor, EQ Kids Club &middot; Webster Groves</p>
+            <p>
+              Hanako has been teaching and leading kids since 2010 &mdash; at the
+              art-and-nature summer camps of Cheekwood Estate &amp; Gardens, on stage
+              running live science shows for school audiences with Mr. Bond and the
+              Science Guys, in children's dance classes she taught herself, and
+              one-on-one as a tutor. Her classes are warm, active, and structured:
+              kids are moving, playing, and talking &mdash; never sitting through a
+              lecture. She leads every EQ Kids session personally, keeps groups small
+              so she can coach each child through real moments as they happen, and
+              sends parents a short note each week about what the group practiced.
+            </p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: var(--accent-dark); font-weight: 600;">
+              Fun fact kids love: Hanako has been an Irish dancer since age seven &mdash;
+              and was the highest-ranked dancer at her school.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="pill">Parent peace of mind</span>
+          <h2>Small, local, and built for real kids.</h2>
+          <p>
+            Families around Webster Groves, Kirkwood, Glendale, Maplewood, Brentwood,
+            Shrewsbury, and South City can apply for a Saturday group that fits their
+            child's age, energy, and needs.
+          </p>
+        </div>
+        <div class="cards3">
+          <article class="card">
+            <span class="num">1</span>
+            <h3>Grouped with care</h3>
+            <p>The application helps us place kids by age and fit instead of dropping every child into one big mixed group.</p>
+          </article>
+          <article class="card">
+            <span class="num">2</span>
+            <h3>Shy and energetic kids welcome</h3>
+            <p>Sessions mix movement, quiet reflection, partner practice, and structured group time so different temperaments have a way in.</p>
+          </article>
+          <article class="card">
+            <span class="num">3</span>
+            <h3>Parents stay in the loop</h3>
+            <p>After each session, families get a short note about what the group practiced and a simple way to keep it going at home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="pill">What a session looks like</span>
+          <h2>Two hours, zero worksheets.</h2>
+        </div>
+        <div class="card timeline">
+          <div class="row">
+            <span class="time">12:00&ndash;12:15</span>
+            <div class="what"><strong>Arrival &amp; check-in</strong><span>Kids land, settle, and practice naming how they're arriving today.</span></div>
+          </div>
+          <div class="row">
+            <span class="time">12:15&ndash;12:45</span>
+            <div class="what"><strong>Story &amp; skill of the week</strong><span>A story or scenario introduces one concrete skill &mdash; like spotting frustration before it boils over.</span></div>
+          </div>
+          <div class="row">
+            <span class="time">12:45&ndash;1:30</span>
+            <div class="what"><strong>Games &amp; practice</strong><span>Role play, movement games, art, and partner challenges that put the skill to work.</span></div>
+          </div>
+          <div class="row">
+            <span class="time">1:30&ndash;2:00</span>
+            <div class="what"><strong>Reflect &amp; take it home</strong><span>Kids share what worked, and families get a simple prompt to keep it going at home.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="pill">Schedule, location &amp; tuition</span>
+          <h2>The details, all in one place.</h2>
+        </div>
+        <div class="logistics">
+          <ul class="fact-list">
+            <li><span class="k">Where</span><span>The Monday Club, near downtown Webster Groves, MO</span></li>
+            <li><span class="k">Who</span><span>Elementary-aged kids (kindergarten through 5th grade), grouped by age</span></li>
+            <li><span class="k">When</span><span>Saturdays, 12:00&ndash;2:00pm</span></li>
+            <li><span class="k">Group size</span><span>Capped at 12 kids per group</span></li>
+            <li><span class="k">Led by</span><span>Hanako Hashiguchi, at every session</span></li>
+            <li><span class="k">Apply</span><span>Free to apply. We'll call to talk fit and next steps.</span></li>
           </ul>
-          <a class="button primary wide" href="#contact">Ask about enrollment</a>
+          <div class="price-card">
+            <h3>Founding-family tuition</h3>
+            <div class="price-big">$197<span>/month &nbsp;<s style="opacity:0.55;">$297</s></span></div>
+            <p style="font-size: 0.92rem; opacity: 0.9; margin-top: 4px;">
+              The first 12 families lock in the founding rate for as long as they're
+              enrolled. Regular tuition is $297/month.
+            </p>
+            <ul>
+              <li>Weekly two-hour sessions (8+ hours per month)</li>
+              <li>Small group capped at 12 kids</li>
+              <li>All materials and activities included</li>
+              <li>Weekly parent note on what we practiced</li>
+              <li>Cancel anytime &mdash; no contracts, no enrollment fees</li>
+            </ul>
+            <a class="btn full" href="#apply">Apply for a founding spot</a>
+            <p class="price-compare">
+              At the founding rate, EQ Kids Club is 8+ hours of guided small-group
+              practice each month &mdash; under $50 per two-hour Saturday session.
+            </p>
+            <p class="price-compare" style="margin-top: 10px;">
+              <strong>No pressure:</strong> applying simply starts the conversation.
+              We'll answer questions and explain the next step before you commit.
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section faq-section">
-        <div class="section-heading">
-          <p class="eyebrow">Questions families ask</p>
-          <h2>Clear, practical, and parent-friendly.</h2>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="pill">Common questions</span>
+          <h2>What parents usually ask.</h2>
         </div>
-        <div class="faq-list">
+        <div class="faq">
           <details open>
-            <summary>Who is this for?</summary>
-            <p>Elementary-aged kids who would benefit from guided practice with emotions, communication, confidence, and friendship skills.</p>
-          </details>
-          <details>
-            <summary>How often does it meet?</summary>
-            <p>The program is designed to meet once per week for a couple of hours after school.</p>
-          </details>
-          <details>
             <summary>Is this therapy?</summary>
-            <p>No. EQ Kids is an educational enrichment program focused on SEL skills, practice, and reflection.</p>
+            <p>No. EQ Kids Club is an educational enrichment program &mdash; like a sports team for emotional skills. Kids practice tools through games and activities. It is not counseling and not a substitute for it.</p>
+          </details>
+          <details>
+            <summary>My kid is shy / my kid is high-energy. Will this work for them?</summary>
+            <p>Both, genuinely. Sessions mix movement and quiet activities, and the small group size means Hanako can meet each child where they are. Shy kids are never put on the spot; high-energy kids get plenty of room to move.</p>
+          </details>
+          <details>
+            <summary>What happens after I apply?</summary>
+            <p>We review your application and reach out within one day to talk through schedule, group fit, and any questions. If it feels like a good match, we explain the next step and help you choose the right Saturday group.</p>
+          </details>
+          <details>
+            <summary>Does applying commit me to anything?</summary>
+            <p>No. Applying is free and simply starts the conversation. It helps us understand your child, answer your questions, and make sure the group would be a good fit before you make a decision.</p>
+          </details>
+          <details>
+            <summary>Why an application instead of just signing up?</summary>
+            <p>Because groups are capped at 12 and grouped by age, we place kids carefully rather than first-come-first-served. The short application helps us build groups where every kid thrives.</p>
+          </details>
+          <details>
+            <summary>It's Saturday lunchtime &mdash; should my kid eat first?</summary>
+            <p>Yes, please send them with lunch in their belly. Sessions run 12&ndash;2pm and are active, so a fed kid is a happy kid.</p>
+          </details>
+          <details>
+            <summary>Where exactly is The Monday Club?</summary>
+            <p>The Monday Club is a historic community space near downtown Webster Groves, with easy parking and pickup. We'll send full directions and drop-off details when we confirm your spot.</p>
           </details>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" class="contact-section">
-        <div class="contact-copy">
-          <p class="eyebrow">Enrollment interest</p>
-          <h2>Bring EQ Kids to your family or school community.</h2>
+    <section class="apply-section" id="apply">
+      <div class="wrap apply-grid">
+        <div class="apply-copy">
+          <span class="pill">Free application</span>
+          <h2>Apply for a founding spot.</h2>
           <p>
-            Share a little information and we'll follow up about schedule, location,
-            group fit, and next enrollment steps.
+            Takes about 60 seconds. No payment, no commitment. We use the application
+            to understand your child, confirm group fit, and talk through next steps
+            with you by phone.
           </p>
-          <p class="contact-email">
-            Prefer email? Write to <a href="mailto:hello@eqkidsclub.org">hello@eqkidsclub.org</a>.
-          </p>
+          <ol class="apply-steps">
+            <li><span class="n">1</span><span>Tell us about your child below.</span></li>
+            <li><span class="n">2</span><span>We call within one day to answer questions and talk group fit.</span></li>
+            <li><span class="n">3</span><span>If it feels like a good match, we help you choose the right Saturday group.</span></li>
+          </ol>
         </div>
         <form
-          class="contact-form"
+          class="apply"
           id="inquiry-form"
           data-endpoint="https://script.google.com/macros/s/AKfycbzuIgWmZnr0VCK2Vqqbr2FylTaAPcukcbpONJO-oSJF8O1yjsoRWASSG0VXTQ9Ma4vI/exec"
           data-success-url="thank-you.html"
         >
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <input type="hidden" name="source" value="homepage-webster-groves" />
           <label class="hidden-field" aria-hidden="true">
             Leave this blank
             <input type="text" name="website" tabindex="-1" autocomplete="off" />
           </label>
           <label>
             Parent name
-            <input type="text" name="parentName" placeholder="Your name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" required />
+            <input type="text" name="parentName" placeholder="Your name" autocomplete="name" required />
           </label>
           <label>
             Phone
-            <input type="tel" name="phone" placeholder="(555) 123-4567" autocomplete="tel" required />
+            <input type="tel" name="phone" placeholder="(314) 555-1234" autocomplete="tel" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
           </label>
           <label>
             Child's grade
             <select name="childGrade" required>
               <option value="">Select grade</option>
-              <option>Kinder</option>
+              <option>Kindergarten</option>
               <option>1st grade</option>
               <option>2nd grade</option>
               <option>3rd grade</option>
@@ -288,24 +626,26 @@
             </select>
           </label>
           <label>
-            What are you hoping EQ Kids helps with?
-            <textarea name="goals" rows="4" placeholder="Confidence, big feelings, friendships, transitions..."></textarea>
+            What would you most like EQ Kids to help with?
+            <textarea name="goals" rows="3" placeholder="Big feelings, friendships, confidence, meltdowns, transitions..."></textarea>
           </label>
-          <button class="button primary wide" type="submit">Send inquiry</button>
+          <button class="btn full" type="submit">Submit free application</button>
+          <p class="form-fine">No payment required. We'll reach out within one day &mdash; usually sooner &mdash; to talk through fit, schedule, and next steps.</p>
         </form>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <a class="brand" href="#top" aria-label="EQ Kids home">
-        <span class="brand-mark">EQ</span>
-        <span>EQ Kids</span>
-      </a>
-      <div class="footer-links">
-        <p>Afterschool emotional intelligence lessons for elementary-aged kids.</p>
-        <a href="mailto:hello@eqkidsclub.org">hello@eqkidsclub.org</a>
+    <footer>
+      <div class="wrap">
+        <p><strong>EQ Kids Club</strong> &middot; The Monday Club, near Webster Groves &middot; St. Louis, MO</p>
+        <p>Questions? <a href="mailto:hello@eqkidsclub.org">hello@eqkidsclub.org</a></p>
       </div>
     </footer>
-    <script src="script.js"></script>
+
+    <div class="sticky-cta">
+      <a class="btn" href="#apply">Apply for a founding spot</a>
+    </div>
+
+    <script src="script.js?v=apply-free"></script>
   </body>
 </html>
