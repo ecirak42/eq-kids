@@ -6,13 +6,13 @@
     <title>EQ Kids Club | Emotional Intelligence Classes for Kids in Webster Groves, St. Louis</title>
     <meta
       name="description"
-      content="Saturday emotional intelligence classes for elementary-aged kids at The Monday Club near Webster Groves. Free to apply, groups capped at 12, led by Hanako Hashiguchi."
+      content="Weekly emotional intelligence classes for elementary-aged kids at The Monday Club near Webster Groves. Free to apply, groups capped at 12, led by Hanako Hashiguchi."
     />
     <link rel="canonical" href="https://eqkidsclub.org/" />
     <meta property="og:title" content="EQ Kids Club | Emotional Intelligence Classes for Kids" />
     <meta
       property="og:description"
-      content="Saturday emotional intelligence classes for elementary-aged kids near Webster Groves. Free to apply, groups capped at 12."
+      content="Weekly emotional intelligence classes for elementary-aged kids near Webster Groves. Free to apply, groups capped at 12."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eqkidsclub.org/" />
@@ -94,15 +94,6 @@
         margin-bottom: 16px;
       }
 
-      /* Top bar */
-      .topbar {
-        background: var(--green);
-        color: #f4efe5;
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 600;
-        padding: 9px 16px;
-      }
       header.site {
         display: flex;
         align-items: center;
@@ -195,11 +186,12 @@
       /* Instructor */
       .instructor { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center; background: var(--card); border-radius: var(--radius); padding: 36px; box-shadow: 0 10px 28px -18px rgba(35, 69, 57, 0.35); }
       .avatar {
-        width: 110px; height: 110px; border-radius: 50%;
-        background: var(--green); color: var(--cream);
-        display: flex; align-items: center; justify-content: center;
-        font-family: "Fraunces", serif; font-size: 2.4rem; font-weight: 700;
+        width: 150px; height: 150px; border-radius: 50%;
+        overflow: hidden; flex-shrink: 0;
+        border: 4px solid var(--cream);
+        box-shadow: 0 12px 26px -14px rgba(35, 69, 57, 0.45);
       }
+      .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transform: scale(1.25); transform-origin: 50% 28%; }
       .instructor h3 { font-size: 1.4rem; margin-bottom: 6px; }
       .instructor .role { color: var(--accent-dark); font-weight: 600; font-size: 0.95rem; margin-bottom: 12px; }
       .instructor p { color: var(--soft); }
@@ -307,8 +299,6 @@
       />
     </noscript>
 
-    <div class="topbar">Founding cohort now enrolling &middot; Saturdays at The Monday Club, Webster Groves &middot; Only 12 spots</div>
-
     <div class="wrap">
       <header class="site">
         <a class="brand" href="#">
@@ -323,17 +313,17 @@
           <span class="pill">Webster Groves &middot; St. Louis</span>
           <h1>The class that teaches kids what to <em>do</em> with big feelings.</h1>
           <p class="lede">
-            Saturday small-group classes where elementary-aged kids practice handling
-            frustration, making friends, and bouncing back &mdash; through games,
+            Weekly small-group classes where elementary-aged kids practice handling
+            frustration, making friends, and bouncing back through games,
             stories, and role play at The Monday Club near Webster Groves.
           </p>
           <a class="btn" href="#apply">Apply for a founding spot &rarr;</a>
           <p class="hero-note">
-            Saturdays 12&ndash;2pm &middot; Founding cohort capped at 12 kids &middot; No payment to apply.
+            Weekly two-hour sessions &middot; Founding cohort capped at 12 kids &middot; No payment to apply.
             We call within one day to talk through fit and next steps.
           </p>
           <ul class="hero-points">
-            <li>Fewer meltdowns at home &mdash; kids learn real calm-down tools they actually use</li>
+            <li>Fewer meltdowns at home as kids learn real calm-down tools they actually use</li>
             <li>Friendship skills: listening, sharing, apologizing, and repairing conflict</li>
             <li>Confidence to try again when something is hard or goes wrong</li>
           </ul>
@@ -342,7 +332,7 @@
           <img src="assets/eq-kids-hero.png" alt="Elementary-aged kids working together in a small-group EQ class" />
           <div class="hero-tag">
             The Monday Club
-            <small>Saturdays 12&ndash;2pm &middot; Webster Groves, MO</small>
+            <small>Weekly two-hour classes &middot; Webster Groves, MO</small>
           </div>
         </div>
       </section>
@@ -350,7 +340,7 @@
         <div class="trust-item"><strong>Free to apply</strong>No payment or commitment to start the conversation.</div>
         <div class="trust-item"><strong>12 kids max</strong>Small groups so each child gets attention.</div>
         <div class="trust-item"><strong>K-5 age groups</strong>We place kids carefully by age and fit.</div>
-        <div class="trust-item"><strong>Local Saturdays</strong>The Monday Club near downtown Webster Groves.</div>
+        <div class="trust-item"><strong>Local weekly classes</strong>The Monday Club near downtown Webster Groves.</div>
       </div>
     </div>
 
@@ -370,7 +360,7 @@
           <article class="card">
             <span class="num">1</span>
             <h3>Big feelings get a plan</h3>
-            <p>Kids practice what to do when frustration, disappointment, or worry shows up &mdash; before the moment gets too big.</p>
+            <p>Kids practice what to do when frustration, disappointment, or worry shows up before the moment gets too big.</p>
           </article>
           <article class="card">
             <span class="num">2</span>
@@ -409,24 +399,26 @@
           <h2>Led by a real person your kids will love.</h2>
         </div>
         <div class="instructor">
-          <div class="avatar" aria-hidden="true">HH</div>
+          <div class="avatar">
+            <img src="assets/hanako-hashiguchi.jpg" alt="Hanako Hashiguchi, lead instructor for EQ Kids Club" />
+          </div>
           <div>
             <h3>Hanako Hashiguchi</h3>
             <p class="role">Lead Instructor, EQ Kids Club &middot; Webster Groves</p>
             <p>
-              Hanako has been teaching and leading kids since 2010 &mdash; at the
+              Hanako has been teaching and leading kids since 2010 at the
               art-and-nature summer camps of Cheekwood Estate &amp; Gardens, on stage
               running live science shows for school audiences with Mr. Bond and the
               Science Guys, in children's dance classes she taught herself, and
               one-on-one as a tutor. Her classes are warm, active, and structured:
-              kids are moving, playing, and talking &mdash; never sitting through a
+              kids are moving, playing, and talking instead of sitting through a
               lecture. She leads every EQ Kids session personally, keeps groups small
               so she can coach each child through real moments as they happen, and
               sends parents a short note each week about what the group practiced.
             </p>
             <p style="margin-top: 10px; font-size: 0.9rem; color: var(--accent-dark); font-weight: 600;">
-              Fun fact kids love: Hanako has been an Irish dancer since age seven &mdash;
-              and was the highest-ranked dancer at her school.
+              Fun fact kids love: Hanako has been an Irish dancer since age seven and
+              was the highest-ranked dancer at her school.
             </p>
           </div>
         </div>
@@ -440,7 +432,7 @@
           <h2>Small, local, and built for real kids.</h2>
           <p>
             Families around Webster Groves, Kirkwood, Glendale, Maplewood, Brentwood,
-            Shrewsbury, and South City can apply for a Saturday group that fits their
+            Shrewsbury, and South City can apply for a weekly group that fits their
             child's age, energy, and needs.
           </p>
         </div>
@@ -472,19 +464,19 @@
         </div>
         <div class="card timeline">
           <div class="row">
-            <span class="time">12:00&ndash;12:15</span>
+            <span class="time">First 15 min</span>
             <div class="what"><strong>Arrival &amp; check-in</strong><span>Kids land, settle, and practice naming how they're arriving today.</span></div>
           </div>
           <div class="row">
-            <span class="time">12:15&ndash;12:45</span>
-            <div class="what"><strong>Story &amp; skill of the week</strong><span>A story or scenario introduces one concrete skill &mdash; like spotting frustration before it boils over.</span></div>
+            <span class="time">Next 30 min</span>
+            <div class="what"><strong>Story &amp; skill of the week</strong><span>A story or scenario introduces one concrete skill, like spotting frustration before it boils over.</span></div>
           </div>
           <div class="row">
-            <span class="time">12:45&ndash;1:30</span>
+            <span class="time">Next 45 min</span>
             <div class="what"><strong>Games &amp; practice</strong><span>Role play, movement games, art, and partner challenges that put the skill to work.</span></div>
           </div>
           <div class="row">
-            <span class="time">1:30&ndash;2:00</span>
+            <span class="time">Final 30 min</span>
             <div class="what"><strong>Reflect &amp; take it home</strong><span>Kids share what worked, and families get a simple prompt to keep it going at home.</span></div>
           </div>
         </div>
@@ -501,7 +493,7 @@
           <ul class="fact-list">
             <li><span class="k">Where</span><span>The Monday Club, near downtown Webster Groves, MO</span></li>
             <li><span class="k">Who</span><span>Elementary-aged kids (kindergarten through 5th grade), grouped by age</span></li>
-            <li><span class="k">When</span><span>Saturdays, 12:00&ndash;2:00pm</span></li>
+            <li><span class="k">When</span><span>Weekly, two-hour sessions</span></li>
             <li><span class="k">Group size</span><span>Capped at 12 kids per group</span></li>
             <li><span class="k">Led by</span><span>Hanako Hashiguchi, at every session</span></li>
             <li><span class="k">Apply</span><span>Free to apply. We'll call to talk fit and next steps.</span></li>
@@ -518,12 +510,12 @@
               <li>Small group capped at 12 kids</li>
               <li>All materials and activities included</li>
               <li>Weekly parent note on what we practiced</li>
-              <li>Cancel anytime &mdash; no contracts, no enrollment fees</li>
+              <li>Cancel anytime, with no contracts or enrollment fees</li>
             </ul>
             <a class="btn full" href="#apply">Apply for a founding spot</a>
             <p class="price-compare">
               At the founding rate, EQ Kids Club is 8+ hours of guided small-group
-              practice each month &mdash; under $50 per two-hour Saturday session.
+              practice each month, which works out to under $50 per two-hour class.
             </p>
             <p class="price-compare" style="margin-top: 10px;">
               <strong>No pressure:</strong> applying simply starts the conversation.
@@ -543,7 +535,7 @@
         <div class="faq">
           <details open>
             <summary>Is this therapy?</summary>
-            <p>No. EQ Kids Club is an educational enrichment program &mdash; like a sports team for emotional skills. Kids practice tools through games and activities. It is not counseling and not a substitute for it.</p>
+            <p>No. EQ Kids Club is an educational enrichment program, much like a sports team for emotional skills. Kids practice tools through games and activities. It is not counseling and not a substitute for it.</p>
           </details>
           <details>
             <summary>My kid is shy / my kid is high-energy. Will this work for them?</summary>
@@ -551,7 +543,7 @@
           </details>
           <details>
             <summary>What happens after I apply?</summary>
-            <p>We review your application and reach out within one day to talk through schedule, group fit, and any questions. If it feels like a good match, we explain the next step and help you choose the right Saturday group.</p>
+            <p>We review your application and reach out within one day to talk through schedule, group fit, and any questions. If it feels like a good match, we explain the next step and help you choose the right weekly group.</p>
           </details>
           <details>
             <summary>Does applying commit me to anything?</summary>
@@ -562,8 +554,8 @@
             <p>Because groups are capped at 12 and grouped by age, we place kids carefully rather than first-come-first-served. The short application helps us build groups where every kid thrives.</p>
           </details>
           <details>
-            <summary>It's Saturday lunchtime &mdash; should my kid eat first?</summary>
-            <p>Yes, please send them with lunch in their belly. Sessions run 12&ndash;2pm and are active, so a fed kid is a happy kid.</p>
+            <summary>How long is each class?</summary>
+            <p>Classes are planned as two-hour weekly sessions. We'll share the confirmed day and time before enrollment begins.</p>
           </details>
           <details>
             <summary>Where exactly is The Monday Club?</summary>
@@ -586,7 +578,7 @@
           <ol class="apply-steps">
             <li><span class="n">1</span><span>Tell us about your child below.</span></li>
             <li><span class="n">2</span><span>We call within one day to answer questions and talk group fit.</span></li>
-            <li><span class="n">3</span><span>If it feels like a good match, we help you choose the right Saturday group.</span></li>
+            <li><span class="n">3</span><span>If it feels like a good match, we help you choose the right weekly group.</span></li>
           </ol>
         </div>
         <form
@@ -630,7 +622,7 @@
             <textarea name="goals" rows="3" placeholder="Big feelings, friendships, confidence, meltdowns, transitions..."></textarea>
           </label>
           <button class="btn full" type="submit">Submit free application</button>
-          <p class="form-fine">No payment required. We'll reach out within one day &mdash; usually sooner &mdash; to talk through fit, schedule, and next steps.</p>
+          <p class="form-fine">No payment required. We'll usually reach out within one day to talk through fit, schedule, and next steps.</p>
         </form>
       </div>
     </section>
